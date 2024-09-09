@@ -28,6 +28,7 @@ public:
     ~RectComponent();
 
     void onFixedUpdate() override;
+    void onFixedUpdate1(float stepTime) override ;
 private:
     const RectTransform *const m_quadTransform = nullptr;
     const CircleTransform *const m_circleTransform = nullptr;

@@ -16,7 +16,7 @@ public:
                 const glm::vec2 &startPosition, float angle, float minDistance, float maxDistance,
                 float updateRateSecond = 0.0f);
     ~RangeSensor();
-    void onFixedUpdate(float stepTime) override;
+    void onFixedUpdate1(float stepTime) override;
     /** Retrieve distance in metrics */
     float getDistance() const;
     Body2D *getBody() const;

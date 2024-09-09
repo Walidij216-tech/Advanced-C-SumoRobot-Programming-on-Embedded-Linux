@@ -30,6 +30,9 @@ RectComponent::RectComponent(const CircleTransform *transform, const std::string
 RectComponent::~RectComponent()
 {
 }
+void RectComponent::onFixedUpdate1(float stepTime) {
+(void)stepTime;
+}
 
 void RectComponent::onFixedUpdate()
 {

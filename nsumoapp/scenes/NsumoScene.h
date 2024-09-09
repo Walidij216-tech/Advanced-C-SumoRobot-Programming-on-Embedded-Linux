@@ -14,6 +14,7 @@ public:
     NsumoScene();
     ~NsumoScene();
     virtual void onFixedUpdate() override;
+    virtual void onFixedUpdate1(float stepTime);
 private:
     std::unique_ptr<Dohyo> m_dohyo;
     std::unique_ptr<Sumobot> m_fourWheelBotOpponent;

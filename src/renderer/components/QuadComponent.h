@@ -21,6 +21,7 @@ public:
     ~QuadComponent();
 
     void onFixedUpdate() override;
+    void onFixedUpdate1(float stepTime) override ;
 private:
     const QuadTransform *const m_transform = nullptr;
     glm::vec4 m_color;

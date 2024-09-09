@@ -66,7 +66,7 @@ public:
      */
     void start();
 
-    void onFixedUpdate(float stepTime) override final;
+    void onFixedUpdate1(float stepTime) override final;
 
     /**
      * Microcontroller should typically not handle key events, but don't make this method final,

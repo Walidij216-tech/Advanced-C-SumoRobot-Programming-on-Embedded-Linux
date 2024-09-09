@@ -28,6 +28,10 @@ public:
         Renderer::drawCircle(m_transform->position, m_transform->outerRadius, m_borderColor);
         Renderer::drawCircle(m_transform->position, m_transform->innerRadius, m_fillColor);
     }
+ virtual void onFixedUpdate1(float stepTime) override {
+    (void)stepTime; // Mark the parameter as used to avoid the warning
+    // Or you could do something meaningful with stepTime
+}
 private:
     const HollowCircleTransform *const m_transform = nullptr;
     const glm::vec4 m_fillColor;

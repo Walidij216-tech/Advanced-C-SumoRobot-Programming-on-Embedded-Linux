@@ -72,6 +72,9 @@ public:
             }
         }
     }
+void onFixedUpdate() override {
+        // Implementation code here
+    }
 private:
     PhysicsBot *m_physicsBot = nullptr;
 };

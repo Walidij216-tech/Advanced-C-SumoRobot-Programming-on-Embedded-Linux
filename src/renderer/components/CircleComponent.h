@@ -27,6 +27,11 @@ public:
         }
         Renderer::drawCircle(m_transform->position, m_transform->radius, m_color);
     }
+ virtual void onFixedUpdate1(float stepTime) override {
+    (void)stepTime; // Mark the parameter as used to avoid the warning
+    // Or you could do something meaningful with stepTime
+}
+  
 private:
     const CircleTransform *const m_transform = nullptr;
     glm::vec4 m_color;

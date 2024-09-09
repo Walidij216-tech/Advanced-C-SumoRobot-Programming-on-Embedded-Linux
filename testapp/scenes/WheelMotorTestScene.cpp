@@ -29,6 +29,9 @@ namespace {
                 }
             }
         }
+   void onFixedUpdate() override {
+        // Implémentation spécifique à votre classe
+    }
     private:
         WheelMotor *m_wheelMotor = nullptr;
     };

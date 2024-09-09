@@ -33,7 +33,7 @@ float *LineDetector::getVoltageLine()
     return &m_detectVoltage;
 }
 
-void LineDetector::onFixedUpdate(float stepTime)
+void LineDetector::onFixedUpdate1(float stepTime)
 {
     const bool detected = m_userData.contactCount.load() > 0;
     if (m_updateRateSeconds && m_timeSinceLastUpdate < m_updateRateSeconds) {

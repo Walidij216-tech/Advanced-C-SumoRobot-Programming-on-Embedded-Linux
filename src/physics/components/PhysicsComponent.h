@@ -29,7 +29,7 @@ public:
         m_world(world.m_world.get()) {}
     virtual ~PhysicsComponent() {
     }
-    virtual void onFixedUpdate(float stepTime) = 0;
+    virtual void onFixedUpdate1(float stepTime) = 0;
 
 protected:
     b2World *m_world;
@@ -37,3 +37,4 @@ protected:
 };
 
 #endif /* PHYSICS_COMPONENT_H */
+

@@ -1,7 +1,7 @@
 #ifndef RENDERABLE_COMPONENT_H_
 #define RENDERABLE_COMPONENT_H_
 
-#include "Component.h"
+#include "/home/walid/Downloads/temp_workspace/sumo_robot/bots2d/src/core/Component.h"
 #include <glm/glm.hpp>
 
 /**
@@ -15,7 +15,8 @@ class RenderableComponent : public Component
         /**
         * Called every simulation iteration (if assigned to a Scene Object).
         */
-        virtual void onFixedUpdate() = 0;
+        virtual void onFixedUpdate1(float stepTime)=0;
+        // Implementation of RenderableComponent's fixed update
         /**
          * Enable or disable rendering.
          */

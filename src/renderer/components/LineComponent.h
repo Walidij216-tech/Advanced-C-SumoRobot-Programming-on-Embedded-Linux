@@ -29,6 +29,11 @@ public:
         assert(m_transform != nullptr);
         Renderer::drawLine(m_transform->start, m_transform->end, m_transform->width, m_color);
     }
+
+    virtual void onFixedUpdate1(float stepTime) override {
+    (void)stepTime; // Mark the parameter as used to avoid the warning
+    // Or you could do something meaningful with stepTime
+}
 private:
     const LineTransform *const m_transform = nullptr;
     glm::vec4 m_color;

@@ -71,10 +71,15 @@ public:
             }
         }
     }
-    void onFixedUpdate(float stepTime) override
+    void onFixedUpdate1(float stepTime)
     {
         (void)stepTime;
     }
+void onFixedUpdate() override
+    {
+        
+    }
+
 private:
     Sumobot *m_sumobot = nullptr;
 };
@@ -152,6 +157,8 @@ NsumoScene::NsumoScene() :
     m_fourWheelBot->setController(m_microcontroller.get());
     m_microcontroller->start();
 }
+void NsumoScene::onFixedUpdate1(float stepTime)
+{(void)stepTime;}
 
 NsumoScene::~NsumoScene()
 {

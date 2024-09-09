@@ -54,7 +54,7 @@ void Microcontroller::transferVoltageLevels()
 
 /* Called by the simulator update loop, keep it short to avoid affecting
  * the frame rate. */
-void Microcontroller::onFixedUpdate(float stepTime)
+void Microcontroller::onFixedUpdate1(float stepTime)
 {
     m_physicsStarted = true;
 

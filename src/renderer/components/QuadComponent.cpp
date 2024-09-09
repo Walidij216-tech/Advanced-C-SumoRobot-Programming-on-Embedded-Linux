@@ -21,3 +21,7 @@ void QuadComponent::onFixedUpdate()
 
     Renderer::drawQuad(m_transform->quadCoords, m_color);
 }
+
+void QuadComponent::onFixedUpdate1(float stepTime) {
+    (void)stepTime; // Suppress the unused parameter warning
+}

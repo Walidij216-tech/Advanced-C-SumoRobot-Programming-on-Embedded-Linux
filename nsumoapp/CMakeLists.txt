@@ -25,19 +25,19 @@ set (NSUMOAPP_SCENES
 set (NSUMOAPP_CONTROLLERS
     controllers/NsumoController/main.c
     controllers/NsumoController/NsumoMicrocontroller.cpp
-    controllers/NsumoController/nsumo/src/common/enum_to_string.c
-    controllers/NsumoController/nsumo/src/common/ring_buffer.c
-    controllers/NsumoController/nsumo/src/app/line.c
-    controllers/NsumoController/nsumo/src/app/drive.c
-    controllers/NsumoController/nsumo/src/app/enemy.c
-    controllers/NsumoController/nsumo/src/app/timer.c
-    controllers/NsumoController/nsumo/src/app/input_history.c
-    controllers/NsumoController/nsumo/src/app/state_machine.c
-    controllers/NsumoController/nsumo/src/app/state_retreat.c
-    controllers/NsumoController/nsumo/src/app/state_attack.c
-    controllers/NsumoController/nsumo/src/app/state_search.c
-    controllers/NsumoController/nsumo/src/app/state_wait.c
-    controllers/NsumoController/nsumo/src/app/state_manual.c
+    controllers/NsumoController/sumo_robot/src/common/enum_to_string.c
+    controllers/NsumoController/sumo_robot/src/common/ring_buffer.c
+    controllers/NsumoController/sumo_robot/src/app/line.c
+    controllers/NsumoController/sumo_robot/src/app/drive.c
+    controllers/NsumoController/sumo_robot/src/app/enemy.c
+    controllers/NsumoController/sumo_robot/src/app/timer.c
+    controllers/NsumoController/sumo_robot/src/app/input_history.c
+    controllers/NsumoController/sumo_robot/src/app/state_machine.c
+    controllers/NsumoController/sumo_robot/src/app/state_retreat.c
+    controllers/NsumoController/sumo_robot/src/app/state_attack.c
+    controllers/NsumoController/sumo_robot/src/app/state_search.c
+    controllers/NsumoController/sumo_robot/src/app/state_wait.c
+    controllers/NsumoController/sumo_robot/src/app/state_manual.c
     controllers/NsumoController/nsumo_simulated/tb6612fng.c
     controllers/NsumoController/nsumo_simulated/qre1113.c
     controllers/NsumoController/nsumo_simulated/vl53l0x.c
@@ -59,7 +59,7 @@ add_executable(nsumoapp
 )
 
 target_include_directories(nsumoapp PRIVATE scenes)
-target_include_directories(nsumoapp PRIVATE controllers/NsumoController/nsumo/src)
+target_include_directories(nsumoapp PRIVATE controllers/NsumoController/sumo_robot/src)
 target_include_directories(nsumoapp PRIVATE controllers)
 target_include_directories(nsumoapp PRIVATE ${BOTS2D_RELATIVE_PATH}/assets/objects)
 target_include_directories(nsumoapp PRIVATE ${BOTS2D_RELATIVE_PATH}/src/core)
