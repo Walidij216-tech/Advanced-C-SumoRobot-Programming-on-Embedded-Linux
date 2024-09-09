@@ -19,3 +19,6 @@
 [submodule "nsumoapp/controllers/NsumoController/nsumo"]
 	path = nsumoapp/controllers/NsumoController/nsumo
 	url = git@github.com:artfulbytes/nsumo_video.git
+[submodule "nsumoapp/controllers/NsumoController/sumo_robot/external/printf"]
+	path = nsumoapp/controllers/NsumoController/sumo_robot/external/printf
+	url = https://github.com/mpaland/printf/tree/d3b984684bb8a8bdc48cc7a1abecb93ce59bbe3e
